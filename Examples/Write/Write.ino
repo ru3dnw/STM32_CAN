@@ -23,6 +23,7 @@ void setup() {
 
 void loop() {
   uint8_t Counter = 0;
+  CAN_TX_msg.flags.extended = 1;
   while(1){
     if (Counter > 255){ Counter = 0;}
     delay(50);
